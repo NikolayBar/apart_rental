@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Аренда квартиры в [районе] | [Ваше имя/контакты]</title>
+    <title>Аренда квартиры в Замитино | Контакты</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -22,18 +22,14 @@
       <!-- Блок с фото -->
       <section class="gallery">
         <h2>Фотографии квартиры</h2>
-        <div class="photos">
-          <img src="images/hall_1.jpg" alt="Прихожая" />
-          <img src="images/kitchen.jpg" alt="Кухня" />
-          <img src="images/bedroom_1.jpg" alt="Спальня" />
-        </div>
+        <div id="gallery-container"></div>
       </section>
 
       <!-- Блок с описанием -->
       <section class="description">
         <h2>О квартире</h2>
         <ul>
-          <li>📍 <strong>Район:</strong> [Название]</li>
+          <li>📍 <strong>Район:</strong> Замитино</li>
           <li>📏 <strong>Площадь:</strong> 50 м²</li>
           <li>🛏️ <strong>Спальни:</strong> 1</li>
           <li>🛋️ <strong>Мебель:</strong> Полностью меблирована</li>
@@ -54,5 +50,8 @@
     <footer>
       <p>© 2024 Аренда квартиры. Все права защищены.</p>
     </footer>
+
+    <!-- Подключаем скрипт для загрузки изображений -->
+    <script src="js/load-images.js"></script>
   </body>
 </html>
