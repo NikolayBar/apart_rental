@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш_ключ&lang=ru_RU"
+      defer
+    ></script>
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -27,22 +31,39 @@
 
       <!-- Блок с описанием -->
       <section class="description">
-        <h2>О квартире</h2>
-        <ul>
-          <li>📍 <strong>Район:</strong> Замитино</li>
-          <li>📏 <strong>Площадь:</strong> 50 м²</li>
-          <li>🛏️ <strong>Спальни:</strong> 1</li>
-          <li>🛋️ <strong>Мебель:</strong> Полностью меблирована</li>
-        </ul>
+        <div class="description-wrapper">
+          <div class="text-block">
+            <h2>О квартире</h2>
+            <ul>
+              <li>📍 <strong>Район:</strong> Замитино</li>
+              <li>📏 <strong>Площадь:</strong> 50 м²</li>
+              <li>🛏️ <strong>Спальни:</strong> 1</li>
+              <li>🛋️ <strong>Мебель:</strong> Полностью меблирована</li>
+              <li>🚇 <strong>Метро:</strong> 20 минут пешком</li>
+              <li>🏪 <strong>Магазины:</strong> 5 минут</li>
+            </ul>
+          </div>
+
+          <div class="map-block">
+            <div id="map" style="width: 100%; height: 300px"></div>
+            <p class="map-note">Точное расположение уточняйте при звонке</p>
+          </div>
+        </div>
       </section>
 
       <!-- Блок с контактами -->
       <section class="contacts">
         <h2>Свяжитесь для просмотра</h2>
-        <a href="tel:+79001234567" class="button">Позвонить</a>
-        <a href="https://wa.me/79001234567" class="button"
-          >Написать в WhatsApp</a
-        >
+        <button id="contactsBtn" class="button">Контакты</button>
+        <div id="contactsModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Контакты для аренды</h3>
+            <p>Телефон: <a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+            <p>WhatsApp: <a href="https://wa.me/79001234567">Написать</a></p>
+            <p>Email: <a href="mailto:rent@example.com">rent@example.com</a></p>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -51,7 +72,10 @@
       <p>© 2024 Аренда квартиры. Все права защищены.</p>
     </footer>
 
-    <!-- Подключаем скрипт для загрузки изображений -->
+    <!-- Подключаем скрипты -->
+    <script src="js/config.js"></script>
     <script src="js/load-images.js"></script>
+    <script src="js/rental-status.js"></script>
+    <script src="js/map.js" defer></script>
   </body>
 </html>
