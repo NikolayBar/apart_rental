@@ -2,10 +2,57 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Тест</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аренда квартиры в [районе] | [Ваше имя/контакты]</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>VS Code настроен!</h1>
+    <!-- Шапка сайта -->
+    <header>
+      <h1>Аренда уютной квартиры в Замитино</h1>
+      <p>Современный ремонт, вся мебель, 20 мин до метро</p>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+      <!-- Блок с фото -->
+      <section class="gallery">
+        <h2>Фотографии квартиры</h2>
+        <div class="photos">
+          <img src="images/hall_1.jpg" alt="Прихожая" />
+          <img src="images/kitchen.jpg" alt="Кухня" />
+          <img src="images/bedroom_1.jpg" alt="Спальня" />
+        </div>
+      </section>
+
+      <!-- Блок с описанием -->
+      <section class="description">
+        <h2>О квартире</h2>
+        <ul>
+          <li>📍 <strong>Район:</strong> [Название]</li>
+          <li>📏 <strong>Площадь:</strong> 50 м²</li>
+          <li>🛏️ <strong>Спальни:</strong> 1</li>
+          <li>🛋️ <strong>Мебель:</strong> Полностью меблирована</li>
+        </ul>
+      </section>
+
+      <!-- Блок с контактами -->
+      <section class="contacts">
+        <h2>Свяжитесь для просмотра</h2>
+        <a href="tel:+79001234567" class="button">Позвонить</a>
+        <a href="https://wa.me/79001234567" class="button"
+          >Написать в WhatsApp</a
+        >
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+      <p>© 2024 Аренда квартиры. Все права защищены.</p>
+    </footer>
   </body>
 </html>
